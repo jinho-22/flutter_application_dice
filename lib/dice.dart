@@ -3,6 +3,11 @@ class Dice {
   late List<int> dice = [];
 
   Dice({required this.size}) {
+    init();
+  }
+
+  void init() {
+    dice.clear();
     for (int i = 1; i <= size; i++) {
       dice.add(i);
     }
